@@ -1,0 +1,16 @@
+{% load static %}
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+{% get_static_prefix as STATIC_URL %}
+
+{% get_flatpages '/right/' as pages %}
+{% for page in pages %}
+<div class="post">
+    <div class="postbottom">
+       <h3>{{ page.title }}</h3>
+    </div>
+    <div class="postcontent">
+        {{ page.content|safe }}
+    </div>
+</div>
+{% endfor %}

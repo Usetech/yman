@@ -1,0 +1,299 @@
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_URL %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>Жиженко Людмила Васильевна - Галерея работ. Натюрморты, пейзажи, уникальная техника написания картин нефтью</title>
+    <meta name="description" content="Галерея работ Людмилы Жиженко. Натюрморты, пейзажи, уникальная техника написания картин нефтью" />
+    <meta name="keywords" content="картины, масло, холст, акварель, пейзажи, натюрморты, купить картины, купить картину"/>
+    <meta name="author" content="Жиженко Людмила Васильевна"/>
+    <!-- end: Meta -->
+
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- end: Mobile Specific -->
+
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content="Жиженко Людмила: галерея работ"/>
+    <meta property="og:description" content="Галерея картин Людмилы Жиженко"/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content="http://www.zhizhenko.com"/>
+    <meta property="og:image" content=""/>
+    <!-- end: Facebook Open Graph -->
+
+    <!-- start: CSS -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/layerslider.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9 ]>
+	  <link href="css/styleIE.css" rel="stylesheet">
+	<![endif]-->
+
+    <!--[if IE 9 ]>
+	  <link href="css/styleIE9.css" rel="stylesheet">
+	<![endif]-->
+
+    <!-- end: CSS -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17795741-1']);
+        _gaq.push(['_setDomainName', 'www.lzhizhenko.com']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    {% block header_ext %}{% endblock %}
+</head>
+<body>
+
+<!--start: Header -->
+<header>
+
+    <!--start: Container -->
+    <div class="container">
+
+        <!--start: Navigation -->
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/">Ludmila Zhizhenko</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li ><a href="/">Галерея</a></li>
+                        <li ><a href="{% url about %}">О художнице</a></li>
+                        <li ><a href="{% url contacts %}">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end: Navigation -->
+
+    </div>
+    <!--end: Container-->
+
+</header>
+<!--end: Header-->
+<!-- start: Container -->
+<div class="container">
+
+    <!-- start: Page Title -->
+    <div id="page-title">
+        <h2>{% block title %}{% endblock %}</h2>
+    </div>
+    <!-- end: Page Title -->
+
+    <!--start: Wrapper-->
+    <div id="wrapper" {% block wrapperclass %}{% endblock %}>
+
+        {% block content %}{% endblock %}
+
+    </div>
+    <!-- end: Wrapper  -->
+
+</div>
+<!--end: Container-->
+
+<!-- start: Footer -->
+<div id="footer">
+
+    <!-- start: Container -->
+    <div class="container">
+
+        <!-- start: Row -->
+        <div class="row-fluid">
+
+            <!-- start: About -->
+            <div class="span3">
+
+                <h3>Людмила Жиженко</h3>
+
+                <p>
+                    <i class="fa-icon-map-marker"></i> Республика Беларусь, г. Гомель
+                </p>
+                <p>
+                    <i class="fa-icon-phone"></i> Тел.: +375 (296) 797-341
+                </p>
+                <p>
+                    <i class="fa-icon-envelope"></i> Email: <a href="mailto:lzhizhenko@gmail.com">lzhizhenko@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fa-icon-globe"></i> Web: <a href="/">www.zhizhenko.com</a>
+                </p>
+
+            </div>
+            <!-- end: About -->
+
+            <!-- start: Latest Tweets -->
+            <div class="span3" style="display: none;">
+
+                <h3>Latest Tweets</h3>
+
+                <ul id="twitter">
+
+                </ul>
+
+                <div class="clear"></div>
+
+
+            </div>
+            <!-- end: Latest Tweets -->
+
+            <!-- start: Photo Stream -->
+            <div class="span3">
+
+                <h3>Новые работы</h3>
+                <div class="flickr-widget">
+                    {% for pic in recent_pics %}
+                    <div class="flickr_badge_image"><a href="{% thumbnail pic.photo 1280x960 crop %}" class="fb"><img src="{% thumbnail pic.photo 75x75 crop %}" alt="{{ pic.name }}" title="{{ pic.name }}" height="75" width="75"></a></div>
+                    {% endfor %}
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+            <!-- end: Photo Stream -->
+
+            <!-- start: Follow Us -->
+            <div class="span3" style="display: none;">
+
+                <h3>Follow Us</h3>
+
+                <a href="#" class="social-dribbble"></a>
+                <a href="#" class="social-twitter"></a>
+                <a href="#" class="social-flickr"></a>
+                <a href="#" class="social-facebook"></a>
+                <a href="#" class="social-linkedin"></a>
+                <a href="#" class="social-vimeo"></a>
+                <a href="#" class="social-youtube"></a>
+                <a href="#" class="social-delicious"></a>
+                <a href="#" class="social-rss"></a>
+                <a href="#" class="social-picassa"></a>
+                <a href="#" class="social-deviantart"></a>
+                <a href="#" class="social-technorati"></a>
+                <a href="#" class="social-stumbleupon"></a>
+                <a href="#" class="social-appstore"></a>
+                <a href="#" class="social-paypal"></a>
+                <a href="#" class="social-myspace"></a>
+                <a href="#" class="social-pinterest"></a>
+                <a href="#" class="social-soundcloud"></a>
+                <a href="#" class="social-behance"></a>
+                <a href="#" class="social-instagram"></a>
+                <a href="#" class="social-googleplus"></a>
+
+            </div>
+            <!-- end: Follow Us -->
+
+        </div>
+        <!-- end: Row -->
+
+    </div>
+    <!-- end: Container  -->
+
+</div>
+<!-- end: Footer -->
+
+<!-- start: Under Footer -->
+<div id="under-footer">
+
+    <!-- start: Container -->
+    <div class="container">
+
+        <!-- start: Row -->
+        <div class="row-fluid">
+
+            <!-- start: Under Footer Logo -->
+            <div class="span2">
+                <div id="under-footer-logo">
+                    <a class="brand" href="#">Л. Жиженко</a>
+                </div>
+            </div>
+            <!-- end: Under Footer Logo -->
+
+            <!-- start: Under Footer Copyright -->
+            <div class="span9">
+
+                <div id="under-footer-copyright">
+                    &copy; 2009-{% now "Y" %}. Использование материалов сайта без согласия автора не допускается
+                </div>
+
+            </div>
+            <!-- end: Under Footer Copyright -->
+
+            <!-- start: Under Footer Back To Top -->
+            <div class="span1">
+
+                <div id="under-footer-back-to-top">
+                    <a href="#"></a>
+                </div>
+
+            </div>
+            <!-- end: Under Footer Back To Top -->
+
+        </div>
+        <!-- end: Row -->
+
+    </div>
+    <!-- end: Container  -->
+
+</div>
+<!-- end: Under Footer -->
+
+<!-- start: Java Script -->
+<script src="{{ STATIC_URL }}js/jquery-1.8.2.js"></script>
+<script src="{{ STATIC_URL }}js/isotope.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.imagesloaded.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+<script src="{{ STATIC_URL }}js/flexslider.js"></script>
+<script src="{{ STATIC_URL }}js/carousel.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.cslider.js"></script>
+<script src="{{ STATIC_URL }}js/slider.js"></script>
+<script src="{{ STATIC_URL }}js/fancybox.js"></script>
+<script src="{{ STATIC_URL }}js/twitter.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.placeholder.min.js"></script>
+
+<script src="{{ STATIC_URL }}js/jquery-easing-1.3.js"></script>
+<script src="{{ STATIC_URL }}js/layerslider.kreaturamedia.jquery.js"></script>
+
+<script src="{{ STATIC_URL }}js/excanvas.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.flot.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.flot.pie.min.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.flot.stack.js"></script>
+<script src="{{ STATIC_URL }}js/jquery.flot.resize.min.js"></script>
+
+<script defer="defer" src="{{ STATIC_URL }}js/modernizr.js"></script>
+<script defer="defer" src="{{ STATIC_URL }}js/retina.js"></script>
+<script defer="defer" src="{{ STATIC_URL }}js/custom.js"></script>
+<!-- end: Java Script -->
+<script language="javascript">
+$(function() {
+    $(".fb").fancybox();
+});
+</script>
+{% block body_end %}{% endblock %}
+
+</body>
+</html>

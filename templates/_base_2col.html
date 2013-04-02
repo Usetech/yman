@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <!--start: Row -->
+    <div class="row-fluid">
+
+        <div class="posts span8">
+            {% block content_main %}{% endblock %}
+        </div>
+
+        <!-- start: Sidebar -->
+        <div class="span4 sidebar hidden-phone">
+            {% block content_sidebar %}{% endblock %}
+        </div>
+        <!-- end: Sidebar -->
+
+    </div>
+    <!--start: Row -->
+{% endblock %}

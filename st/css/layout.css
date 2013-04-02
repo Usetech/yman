@@ -1,0 +1,117 @@
+@import "reset.css";
+@import "../js/fancybox/jquery.fancybox.css";
+
+
+* {font-family:Calibri, Arial, MS Sans Serif;}
+
+h1 {font-size:140%;font-family:Book Antiqua, Arial, MS Sans Serif;}
+h2 {font-size:120%;font-family:Book Antiqua, Arial, MS Sans Serif;margin-top:4px;}
+h3 {font-size:110%;color:#bcd;font-family:Book Antiqua, Arial, MS Sans Serif;margin-top:4px;}
+
+body {background:#e6e6e6 url(../img/bg.png) repeat-x;}
+
+#contents 
+{
+    border-top:1px solid white;
+	background-color:#d8d8d8;
+	width:100%;
+	overflow:hidden;
+}
+
+#content-inner
+{
+    width:1020px;    
+    overflow:hidden;
+    margin: 0 auto;
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	padding-top:20px;
+}
+#content-main {width:660px;float:left;left:0px;overflow:hidden;}
+#content-secondary 
+{
+    width:330px;float:right;right:0px;overflow:hidden;    
+}
+#content-secondary .post 
+{
+    margin-left:0px;
+}
+#content-secondary .post .postcontent 
+{
+    padding:10px;
+    border-bottom:none;
+}
+#content-secondary .post .postbottom
+{
+    text-align:left;
+} 
+
+
+#footer {background:#456;}
+#header, #footer
+{		
+	color:White;
+	padding:10px;
+	text-align:center;
+	background:#345;
+}
+#header { position:relative; }
+#header #translate {position:absolute;right:10px;bottom:10px;background:#234;border:1px dotted #456;padding:4px;}
+#header a, #header a:visited, #header a:hover {color:White;text-decoration:none;}
+#floater 
+{
+	width:100%;padding:10px;background:#849eb8;	
+}
+
+#footer 
+{
+	font-size:90%;
+}
+
+#pictures-list 
+{
+	width:100%;	
+	overflow:hidden;
+}
+
+#pictures-list a,#pictures-list img {}
+#pictures-list img {margin-bottom:2px;}
+
+#pictures-list h2.title
+{
+	color:#789;
+	font-family:Calibri, Arial;
+	margin-top:5px;margin-bottom:2px;
+}
+
+#pictures-list .desc 
+{
+	color:Gray;clear:right;
+}
+
+#pictures-list .material {color:#456;}
+
+#pictures-list .decorated 
+{
+	color:Gray;font-size:80%;float:right;
+	padding-left:12px;
+	background:url(../img/ico-decor.png) no-repeat 0px 50%;
+	height:10px;
+	line-height:10px;
+	vertical-align:middle;
+}
+
+#pictures-list .price 
+{
+	font-size:110%;	
+	font-style:italic;
+	color:#89a;
+	clear:both;
+	float:left;
+}
+
+#pictures-list .stock 
+{
+    text-align:left;float:left;color:Silver;font-size:12px;line-height:1.9em;margin-left:10px;
+}

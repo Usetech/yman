@@ -1,0 +1,117 @@
+﻿h1, h2, h3, h4, h5, h6 {
+    color:white;
+    font-family:"Myriad Pro",Myriad,Arial,sans-serif;
+    font-weight:normal;
+    margin:0;
+}
+h1 {margin-bottom:10px;}
+h5 {margin-bottom:3px;margin-top:5px;}
+h3, h4,h5,h6 {color:#1D8AC3;}
+h3, h4 {font-weight:bold;}
+h6 {margin-top:5px;margin-bottom:5px;}
+
+.post .postcontent a, .post .postcontent a:hover, .post .postcontent a:visited {text-decoration:none;}
+
+.post {
+    -moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.1);
+    background:none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #C5C5C5;
+    margin:0 0 40px;
+    position:relative;
+    margin-left:53px;
+}
+
+.post .posttype {
+    background:url("../img/bg-post-type.png") no-repeat scroll 0 0 #B7D35F;
+    border-color:#9FB753 -moz-use-text-color #9FB753 #9FB753;
+    border-style:solid none solid solid;
+    border-width:1px 0 1px 1px;
+    border:1px solid red;
+    height:24px;
+    left:-43px;
+    position:absolute;
+    top:10px;
+    width:41px;
+    z-index:10;
+}
+
+.posttype .size
+{
+	clear:left;color:#364;
+    font-size:75%;
+	text-align:center;
+	display:block;
+	line-height:28px;
+    width:41px;
+	text-shadow:0px 1px 1px white;
+}
+
+.posttype {
+    background-color:#B7D35F !important;
+    border-color:#B7D35F !important;
+}
+
+
+.post .postcontent {
+    background:url("../img/bg-post.png") repeat-x scroll center top transparent;
+    border-bottom:1px solid #C5C5C5;
+    border-top:1px solid #FFFFFF;
+    padding:10px 30px 10px;
+    position:relative;
+}
+
+.post .postcontent img {border:3px solid white !important;margin-right:3px; margin-bottom:3px;}
+
+.post .postbottom {
+    background:url("../img/bg-post.png") repeat-x scroll center top #E6E6E6;
+    border-top:1px solid #FFFFFF;
+    padding:10px;
+    text-shadow:0px 1px 1px white;
+    text-align:right;
+}
+
+.site-title {
+    font-family:"Myriad Pro",Myriad,Helvetica,Arial,serif;
+    text-shadow:1px 1px 3px #062f4e;
+    font-size:28px;
+    font-weight:bold;
+}
+
+p 
+{
+    margin-bottom:2px;
+}
+p.bio 
+{
+    text-indent:10pt;
+}
+
+.via 
+{
+    color:#999;
+}
+
+.note 
+{
+    float:right;
+    width:100%;
+    border:1px solid white;    
+    background:#f3efd1;
+    margin-bottom:30px;
+    font-size:85%;
+}
+.note .note-inner {margin:10px;}
+
+.materials {
+    color:#58B;
+}
+
+span.tag {
+    font-size:80%;
+    background:silver;
+    border-radius:3px;
+    padding:2px 4px;
+    color:white;
+}
